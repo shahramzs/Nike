@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_nike_logo"
+        app:strokeWidth="1dp"
+        app:strokeColor="?dividerColor"
+        android:scaleType="centerInside"
+        app:shapeAppearance="@style/Avatar"
+        android:layout_marginTop="32dp"/>
+    <TextView
+        android:id="@+id/usernameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Nike.BodyLarge"
+        tools:text="Guest"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp"
+            android:divider="@drawable/shape_divider"
+            android:showDividers="middle|beginning|end">
+            <TextView
+                android:id="@+id/favoriteProductBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/favorites"
+                style="@style/profileLinks"
+                app:drawableStartCompat="@drawable/ic_favorites"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/order_history"
+                style="@style/profileLinks"
+                app:drawableStartCompat="@drawable/fact_check_24"
+                />
+            <TextView
+                android:id="@+id/authBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in"
+                style="@style/profileLinks"
+                app:drawableStartCompat="@drawable/person_pin"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

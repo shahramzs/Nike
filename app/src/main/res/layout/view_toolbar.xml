@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/toolbarBackBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:scaleType="centerInside"
+        android:background="?selectableItemBackgroundBorderless"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_marginStart="16dp"
+        android:layout_gravity="center_vertical|start"/>
+    <TextView
+        android:id="@+id/toolbarTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="comment page"
+        style="@style/TextAppearance.Nike.LabelMedium"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="56dp"/>
+</FrameLayout>

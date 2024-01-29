@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/emptyStateRootView"
+    android:translationZ="10dp"
+    android:background="@color/Neutral99">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/emptyStateImageIv"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:src="@drawable/ic_undraw_empty_cart" />
+
+        <TextView
+            android:id="@+id/emptyStateMessageTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/empty_state_message"
+            android:textAppearance="@style/TextAppearance.Nike.LabelLarge"
+            android:layout_marginTop="32dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/emptyStateCallToActionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/log_in"
+            android:layout_marginTop="32dp"/>
+    </LinearLayout>
+</FrameLayout>
